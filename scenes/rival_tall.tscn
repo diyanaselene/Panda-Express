@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://1qmp8lc2im45"]
+
+[ext_resource type="Script" uid="uid://dcypod7yn26yo" path="res://scripts/rival_tall.gd" id="1_mxgc7"]
+[ext_resource type="SpriteFrames" uid="uid://daiuiu772sd71" path="res://assets/sprites/frames/rival_tall_frames.tres" id="2_i48qh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmmka"]
+size = Vector2(16, 17)
+
+[node name="rival_tall" type="CharacterBody2D" unique_id=777545421]
+collision_layer = 4
+script = ExtResource("1_mxgc7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1232930298]
+sprite_frames = ExtResource("2_i48qh")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681764642]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_hmmka")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1788887985]
+target_position = Vector2(25, 13)

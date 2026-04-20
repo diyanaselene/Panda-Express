@@ -1,0 +1,808 @@
+[gd_scene format=4 uid="uid://duc3v5gleyba7"]
+
+[ext_resource type="Texture2D" uid="uid://d1y0nk52cfka0" path="res://assets/sprites/ui/others/heart_sheet.png" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://dokf6jb8sasy0" path="res://scripts/main_menu.gd" id="1_oa1go"]
+[ext_resource type="Texture2D" uid="uid://bdtxnvms35xq0" path="res://assets/sprites/main_menu/bg/gamebg.webp" id="2_hstxw"]
+[ext_resource type="FontFile" uid="uid://bxt1e3l1ku2nl" path="res://fonts/PixelifySans-Bold.ttf" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://bx4jen21ljk55" path="res://icon.svg" id="3_lgwnu"]
+[ext_resource type="PackedScene" uid="uid://cstsmiyn8jomm" path="res://scenes/panda_player.tscn" id="4_flqon"]
+[ext_resource type="Texture2D" uid="uid://bjaesyy2ebjmp" path="res://assets/sprites/race2/props.png" id="4_hstxw"]
+[ext_resource type="PackedScene" uid="uid://c6qgfookj48e0" path="res://scenes/coin.tscn" id="6_7b55j"]
+[ext_resource type="Texture2D" uid="uid://c5riklr80lk0i" path="res://assets/sprites/ui/buttons/race_button.png" id="7_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://45wxf0pdtnpl" path="res://assets/sprites/ui/buttons/train_button.png" id="8_flqon"]
+[ext_resource type="Texture2D" uid="uid://dh57cscq5ln06" path="res://assets/sprites/ui/buttons/shop_button.png" id="9_rcqid"]
+[ext_resource type="Texture2D" uid="uid://cygxc8cgqf60r" path="res://assets/sprites/ui/buttons/quit_button.png" id="10_1ajci"]
+[ext_resource type="Texture2D" uid="uid://bdubnvfl3he0a" path="res://assets/sprites/ui/buttons/one_button.png" id="11_rcqid"]
+[ext_resource type="Texture2D" uid="uid://cpba40t82r5cu" path="res://assets/sprites/ui/buttons/two_button.png" id="12_1ajci"]
+[ext_resource type="Texture2D" uid="uid://khdqu6dvoahj" path="res://assets/sprites/ui/buttons/close_button.png" id="13_7b55j"]
+[ext_resource type="Texture2D" uid="uid://ccsn76uamiyx5" path="res://assets/sprites/ui/buttons/large_ui.png" id="14_1ajci"]
+[ext_resource type="Texture2D" uid="uid://c17768ljx25gv" path="res://assets/sprites/ui/others/lock.png" id="14_7b55j"]
+[ext_resource type="Texture2D" uid="uid://cdfb66cnkpq3w" path="res://assets/sprites/ui/buttons/roll_button.png" id="18_a8gd2"]
+[ext_resource type="Texture2D" uid="uid://csp1y4y2aaw4u" path="res://assets/sprites/pandaFriend/rusted_crown.png" id="19_hstxw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gw5y6"]
+texture = ExtResource("4_hstxw")
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+30:4/0 = 0
+31:4/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+25:5/0 = 0
+26:5/0 = 0
+27:5/0 = 0
+28:5/0 = 0
+29:5/0 = 0
+30:5/0 = 0
+31:5/0 = 0
+32:5/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+25:6/0 = 0
+26:6/0 = 0
+27:6/0 = 0
+28:6/0 = 0
+29:6/0 = 0
+30:6/0 = 0
+31:6/0 = 0
+32:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+26:7/0 = 0
+27:7/0 = 0
+28:7/0 = 0
+29:7/0 = 0
+30:7/0 = 0
+31:7/0 = 0
+32:7/0 = 0
+33:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+22:8/0 = 0
+23:8/0 = 0
+24:8/0 = 0
+25:8/0 = 0
+26:8/0 = 0
+27:8/0 = 0
+28:8/0 = 0
+29:8/0 = 0
+30:8/0 = 0
+31:8/0 = 0
+32:8/0 = 0
+33:8/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+22:9/0 = 0
+23:9/0 = 0
+24:9/0 = 0
+25:9/0 = 0
+26:9/0 = 0
+27:9/0 = 0
+28:9/0 = 0
+29:9/0 = 0
+30:9/0 = 0
+31:9/0 = 0
+32:9/0 = 0
+33:9/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+16:10/0 = 0
+17:10/0 = 0
+22:10/0 = 0
+23:10/0 = 0
+24:10/0 = 0
+25:10/0 = 0
+26:10/0 = 0
+27:10/0 = 0
+28:10/0 = 0
+29:10/0 = 0
+30:10/0 = 0
+31:10/0 = 0
+32:10/0 = 0
+33:10/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+22:11/0 = 0
+23:11/0 = 0
+24:11/0 = 0
+25:11/0 = 0
+26:11/0 = 0
+27:11/0 = 0
+28:11/0 = 0
+29:11/0 = 0
+30:11/0 = 0
+31:11/0 = 0
+32:11/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+22:12/0 = 0
+23:12/0 = 0
+24:12/0 = 0
+25:12/0 = 0
+26:12/0 = 0
+27:12/0 = 0
+28:12/0 = 0
+29:12/0 = 0
+30:12/0 = 0
+31:12/0 = 0
+32:12/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+22:13/0 = 0
+23:13/0 = 0
+24:13/0 = 0
+25:13/0 = 0
+26:13/0 = 0
+27:13/0 = 0
+28:13/0 = 0
+29:13/0 = 0
+30:13/0 = 0
+31:13/0 = 0
+32:13/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+14:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1ajci"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_gw5y6")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1dfpl"]
+texture = ExtResource("3_lgwnu")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_qywvv"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_1dfpl")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lgwnu"]
+normal = Vector2(1, 0)
+distance = -64.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_flqon"]
+normal = Vector2(-1, 0)
+
+[node name="MainMenu" type="Node2D" unique_id=1119924002]
+script = ExtResource("1_oa1go")
+
+[node name="World" type="Node2D" parent="." unique_id=657191071]
+
+[node name="Background" type="Sprite2D" parent="World" unique_id=187698828]
+modulate = Color(0.8462735, 0.83509266, 0.69280285, 1)
+position = Vector2(584, 352)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_hstxw")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="World" unique_id=2047434155]
+visible = false
+position = Vector2(-217, -196.99998)
+scale = Vector2(5, 5)
+tile_map_data = PackedByteArray("AAASACYAAAAAAAAAAAASACcAAAAAAAEAAAASACgAAAAAAAIAAAASACkAAAAAAAMAAAASACoAAAAAAAQAAAASACsAAAAAAAUAAAASACwAAAAAAAYAAAASAC0AAAAAAAcAAAATACYAAAABAAAAAAATACcAAAABAAEAAAATACgAAAABAAIAAAATACkAAAABAAMAAAATACoAAAABAAQAAAATACsAAAABAAUAAAATACwAAAABAAYAAAATAC0AAAABAAcAAAAUACYAAAACAAAAAAAUACcAAAACAAEAAAAUACgAAAACAAIAAAAUACkAAAACAAMAAAAUACoAAAACAAQAAAAUACsAAAACAAUAAAAUACwAAAACAAYAAAAUAC0AAAACAAcAAAAVACYAAAADAAAAAAAVACcAAAADAAEAAAAVACgAAAADAAIAAAAVACkAAAADAAMAAAAVACoAAAADAAQAAAAVACsAAAADAAUAAAAVACwAAAADAAYAAAAVAC0AAAADAAcAAAAWACYAAAAEAAAAAAAWACcAAAAEAAEAAAAWACgAAAAEAAIAAAAWACkAAAAEAAMAAAAWACoAAAAEAAQAAAAWACsAAAAEAAUAAAAWACwAAAAEAAYAAAAWAC0AAAAEAAcAAAAXACYAAAAFAAAAAAAXACcAAAAFAAEAAAAXACgAAAAFAAIAAAAXACkAAAAFAAMAAAAXACoAAAAFAAQAAAAXACsAAAAFAAUAAAAXACwAAAAFAAYAAAAXAC0AAAAFAAcAAAAYACYAAAAGAAAAAAAYACcAAAAGAAEAAAAYACgAAAAGAAIAAAAYACkAAAAGAAMAAAAYACoAAAAGAAQAAAAYACsAAAAGAAUAAAAYACwAAAAGAAYAAAAYAC0AAAAGAAcAAAAZACYAAAAHAAAAAAAZACcAAAAHAAEAAAAZACgAAAAHAAIAAAAZACkAAAAHAAMAAAAZACoAAAAHAAQAAAAZACsAAAAHAAUAAAAZACwAAAAHAAYAAAAZAC0AAAAHAAcAAAAaACYAAAAAAAAAAAAaACcAAAAAAAEAAAAaACgAAAAAAAIAAAAaACkAAAAAAAMAAAAaACoAAAAAAAQAAAAaACsAAAAAAAUAAAAaACwAAAAAAAYAAAAaAC0AAAAAAAcAAAAbACYAAAABAAAAAAAbACcAAAABAAEAAAAbACgAAAABAAIAAAAbACkAAAABAAMAAAAbACoAAAABAAQAAAAbACsAAAABAAUAAAAbACwAAAABAAYAAAAbAC0AAAABAAcAAAAcACYAAAACAAAAAAAcACcAAAACAAEAAAAcACgAAAACAAIAAAAcACkAAAACAAMAAAAcACoAAAACAAQAAAAcACsAAAACAAUAAAAcACwAAAACAAYAAAAcAC0AAAACAAcAAAAdACYAAAADAAAAAAAdACcAAAADAAEAAAAdACgAAAADAAIAAAAdACkAAAADAAMAAAAdACoAAAADAAQAAAAdACsAAAADAAUAAAAdACwAAAADAAYAAAAdAC0AAAADAAcAAAAeACYAAAAEAAAAAAAeACcAAAAEAAEAAAAeACgAAAAEAAIAAAAeACkAAAAEAAMAAAAeACoAAAAEAAQAAAAeACsAAAAEAAUAAAAeACwAAAAEAAYAAAAeAC0AAAAEAAcAAAAfACYAAAAFAAAAAAAfACcAAAAFAAEAAAAfACgAAAAFAAIAAAAfACkAAAAFAAMAAAAfACoAAAAFAAQAAAAfACsAAAAFAAUAAAAfACwAAAAFAAYAAAAfAC0AAAAFAAcAAAAgACYAAAAGAAAAAAAgACcAAAAGAAEAAAAgACgAAAAGAAIAAAAgACkAAAAGAAMAAAAgACoAAAAGAAQAAAAgACsAAAAGAAUAAAAgACwAAAAGAAYAAAAgAC0AAAAGAAcAAAAhACYAAAAHAAAAAAAhACcAAAAHAAEAAAAhACgAAAAHAAIAAAAhACkAAAAHAAMAAAAhACoAAAAHAAQAAAAhACsAAAAHAAUAAAAhACwAAAAHAAYAAAAhAC0AAAAHAAcAAAAiACYAAAAAAAAAAAAiACcAAAAAAAEAAAAiACgAAAAAAAIAAAAiACkAAAAAAAMAAAAiACoAAAAAAAQAAAAiACsAAAAAAAUAAAAiACwAAAAAAAYAAAAiAC0AAAAAAAcAAAAjACYAAAABAAAAAAAjACcAAAABAAEAAAAjACgAAAABAAIAAAAjACkAAAABAAMAAAAjACoAAAABAAQAAAAjACsAAAABAAUAAAAjACwAAAABAAYAAAAjAC0AAAABAAcAAAAkACYAAAACAAAAAAAkACcAAAACAAEAAAAkACgAAAACAAIAAAAkACkAAAACAAMAAAAkACoAAAACAAQAAAAkACsAAAACAAUAAAAkACwAAAACAAYAAAAkAC0AAAACAAcAAAAlACYAAAADAAAAAAAlACcAAAADAAEAAAAlACgAAAADAAIAAAAlACkAAAADAAMAAAAlACoAAAADAAQAAAAlACsAAAADAAUAAAAlACwAAAADAAYAAAAlAC0AAAADAAcAAAAmACYAAAAEAAAAAAAmACcAAAAEAAEAAAAmACgAAAAEAAIAAAAmACkAAAAEAAMAAAAmACoAAAAEAAQAAAAmACsAAAAEAAUAAAAmACwAAAAEAAYAAAAmAC0AAAAEAAcAAAAnACYAAAAFAAAAAAAnACcAAAAFAAEAAAAnACgAAAAFAAIAAAAnACkAAAAFAAMAAAAnACoAAAAFAAQAAAAnACsAAAAFAAUAAAAnACwAAAAFAAYAAAAnAC0AAAAFAAcAAAAoACYAAAAGAAAAAAAoACcAAAAGAAEAAAAoACgAAAAGAAIAAAAoACkAAAAGAAMAAAAoACoAAAAGAAQAAAAoACsAAAAGAAUAAAAoACwAAAAGAAYAAAAoAC0AAAAGAAcAAAApACYAAAAHAAAAAAApACcAAAAHAAEAAAApACgAAAAHAAIAAAApACkAAAAHAAMAAAApACoAAAAHAAQAAAApACsAAAAHAAUAAAApACwAAAAHAAYAAAApAC0AAAAHAAcAAAAqACYAAAAAAAAAAAAqACcAAAAAAAEAAAAqACgAAAAAAAIAAAAqACkAAAAAAAMAAAAqACoAAAAAAAQAAAAqACsAAAAAAAUAAAAqACwAAAAAAAYAAAAqAC0AAAAAAAcAAAArACYAAAABAAAAAAArACcAAAABAAEAAAArACgAAAABAAIAAAArACkAAAABAAMAAAArACoAAAABAAQAAAArACsAAAABAAUAAAArACwAAAABAAYAAAArAC0AAAABAAcAAAAsACYAAAACAAAAAAAsACcAAAACAAEAAAAsACgAAAACAAIAAAAsACkAAAACAAMAAAAsACoAAAACAAQAAAAsACsAAAACAAUAAAAsACwAAAACAAYAAAAsAC0AAAACAAcAAAAtACYAAAADAAAAAAAtACcAAAADAAEAAAAtACgAAAADAAIAAAAtACkAAAADAAMAAAAtACoAAAADAAQAAAAtACsAAAADAAUAAAAtACwAAAADAAYAAAAtAC0AAAADAAcAAAAuACYAAAAEAAAAAAAuACcAAAAEAAEAAAAuACgAAAAEAAIAAAAuACkAAAAEAAMAAAAuACoAAAAEAAQAAAAuACsAAAAEAAUAAAAuACwAAAAEAAYAAAAuAC0AAAAEAAcAAAAvACYAAAAFAAAAAAAvACcAAAAFAAEAAAAvACgAAAAFAAIAAAAvACkAAAAFAAMAAAAvACoAAAAFAAQAAAAvACsAAAAFAAUAAAAvACwAAAAFAAYAAAAvAC0AAAAFAAcAAAAwACYAAAAGAAAAAAAwACcAAAAGAAEAAAAwACgAAAAGAAIAAAAwACkAAAAGAAMAAAAwACoAAAAGAAQAAAAwACsAAAAGAAUAAAAwACwAAAAGAAYAAAAwAC0AAAAGAAcAAAAxACYAAAAHAAAAAAAxACcAAAAHAAEAAAAxACgAAAAHAAIAAAAxACkAAAAHAAMAAAAxACoAAAAHAAQAAAAxACsAAAAHAAUAAAAxACwAAAAHAAYAAAAxAC0AAAAHAAcAAAAyACYAAAAAAAAAAAAyACcAAAAAAAEAAAAyACgAAAAAAAIAAAAyACkAAAAAAAMAAAAyACoAAAAAAAQAAAAyACsAAAAAAAUAAAAyACwAAAAAAAYAAAAyAC0AAAAAAAcAAAAzACYAAAABAAAAAAAzACcAAAABAAEAAAAzACgAAAABAAIAAAAzACkAAAABAAMAAAAzACoAAAABAAQAAAAzACsAAAABAAUAAAAzACwAAAABAAYAAAAzAC0AAAABAAcAAAA0ACYAAAACAAAAAAA0ACcAAAACAAEAAAA0ACgAAAACAAIAAAA0ACkAAAACAAMAAAA0ACoAAAACAAQAAAA0ACsAAAACAAUAAAA0ACwAAAACAAYAAAA0AC0AAAACAAcAAAA1ACYAAAADAAAAAAA1ACcAAAADAAEAAAA1ACgAAAADAAIAAAA1ACkAAAADAAMAAAA1ACoAAAADAAQAAAA1ACsAAAADAAUAAAA1ACwAAAADAAYAAAA1AC0AAAADAAcAAAA2ACYAAAAEAAAAAAA2ACcAAAAEAAEAAAA2ACgAAAAEAAIAAAA2ACkAAAAEAAMAAAA2ACoAAAAEAAQAAAA2ACsAAAAEAAUAAAA2ACwAAAAEAAYAAAA2AC0AAAAEAAcAAAA3ACYAAAAFAAAAAAA3ACcAAAAFAAEAAAA3ACgAAAAFAAIAAAA3ACkAAAAFAAMAAAA3ACoAAAAFAAQAAAA3ACsAAAAFAAUAAAA3ACwAAAAFAAYAAAA3AC0AAAAFAAcAAAA4ACYAAAAGAAAAAAA4ACcAAAAGAAEAAAA4ACgAAAAGAAIAAAA4ACkAAAAGAAMAAAA4ACoAAAAGAAQAAAA4ACsAAAAGAAUAAAA4ACwAAAAGAAYAAAA4AC0AAAAGAAcAAAA5ACYAAAAHAAAAAAA5ACcAAAAHAAEAAAA5ACgAAAAHAAIAAAA5ACkAAAAHAAMAAAA5ACoAAAAHAAQAAAA5ACsAAAAHAAUAAAA5ACwAAAAHAAYAAAA5AC0AAAAHAAcAAAA6ACYAAAAAAAAAAAA6ACcAAAAAAAEAAAA6ACgAAAAAAAIAAAA6ACkAAAAAAAMAAAA6ACoAAAAAAAQAAAA6ACsAAAAAAAUAAAA6ACwAAAAAAAYAAAA6AC0AAAAAAAcAAAA7ACYAAAABAAAAAAA7ACcAAAABAAEAAAA7ACgAAAABAAIAAAA7ACkAAAABAAMAAAA7ACoAAAABAAQAAAA7ACsAAAABAAUAAAA7ACwAAAABAAYAAAA7AC0AAAABAAcAAAA8ACYAAAACAAAAAAA8ACcAAAACAAEAAAA8ACgAAAACAAIAAAA8ACkAAAACAAMAAAA8ACoAAAACAAQAAAA8ACsAAAACAAUAAAA8ACwAAAACAAYAAAA8AC0AAAACAAcAAAA9ACYAAAADAAAAAAA9ACcAAAADAAEAAAA9ACgAAAADAAIAAAA9ACkAAAADAAMAAAA9ACoAAAADAAQAAAA9ACsAAAADAAUAAAA9ACwAAAADAAYAAAA9AC0AAAADAAcAAAA+ACYAAAAEAAAAAAA+ACcAAAAEAAEAAAA+ACgAAAAEAAIAAAA+ACkAAAAEAAMAAAA+ACoAAAAEAAQAAAA+ACsAAAAEAAUAAAA+ACwAAAAEAAYAAAA+AC0AAAAEAAcAAAA/ACYAAAAFAAAAAAA/ACcAAAAFAAEAAAA/ACgAAAAFAAIAAAA/ACkAAAAFAAMAAAA/ACoAAAAFAAQAAAA/ACsAAAAFAAUAAAA/ACwAAAAFAAYAAAA/AC0AAAAFAAcAAABAACYAAAAGAAAAAABAACcAAAAGAAEAAABAACgAAAAGAAIAAABAACkAAAAGAAMAAABAACoAAAAGAAQAAABAACsAAAAGAAUAAABAACwAAAAGAAYAAABAAC0AAAAGAAcAAABBACYAAAAHAAAAAABBACcAAAAHAAEAAABBACgAAAAHAAIAAABBACkAAAAHAAMAAABBACoAAAAHAAQAAABBACsAAAAHAAUAAABBACwAAAAHAAYAAABBAC0AAAAHAAcAAAAKACYAAAAAAAAAAAAKACcAAAAAAAEAAAAKACgAAAAAAAIAAAAKACkAAAAAAAMAAAAKACoAAAAAAAQAAAAKACsAAAAAAAUAAAAKACwAAAAAAAYAAAAKAC0AAAAAAAcAAAALACYAAAABAAAAAAALACcAAAABAAEAAAALACgAAAABAAIAAAALACkAAAABAAMAAAALACoAAAABAAQAAAALACsAAAABAAUAAAALACwAAAABAAYAAAALAC0AAAABAAcAAAAMACYAAAACAAAAAAAMACcAAAACAAEAAAAMACgAAAACAAIAAAAMACkAAAACAAMAAAAMACoAAAACAAQAAAAMACsAAAACAAUAAAAMACwAAAACAAYAAAAMAC0AAAACAAcAAAANACYAAAADAAAAAAANACcAAAADAAEAAAANACgAAAADAAIAAAANACkAAAADAAMAAAANACoAAAADAAQAAAANACsAAAADAAUAAAANACwAAAADAAYAAAANAC0AAAADAAcAAAAOACYAAAAEAAAAAAAOACcAAAAEAAEAAAAOACgAAAAEAAIAAAAOACkAAAAEAAMAAAAOACoAAAAEAAQAAAAOACsAAAAEAAUAAAAOACwAAAAEAAYAAAAOAC0AAAAEAAcAAAAPACYAAAAFAAAAAAAPACcAAAAFAAEAAAAPACgAAAAFAAIAAAAPACkAAAAFAAMAAAAPACoAAAAFAAQAAAAPACsAAAAFAAUAAAAPACwAAAAFAAYAAAAPAC0AAAAFAAcAAAAQACYAAAAGAAAAAAAQACcAAAAGAAEAAAAQACgAAAAGAAIAAAAQACkAAAAGAAMAAAAQACoAAAAGAAQAAAAQACsAAAAGAAUAAAAQACwAAAAGAAYAAAAQAC0AAAAGAAcAAAARACYAAAAHAAAAAAARACcAAAAHAAEAAAARACgAAAAHAAIAAAARACkAAAAHAAMAAAARACoAAAAHAAQAAAARACsAAAAHAAUAAAARACwAAAAHAAYAAAARAC0AAAAHAAcAAAALAAMAAQAWAAcAAAALAAQAAQAWAAgAAAALAAUAAQAWAAkAAAALAAYAAQAWAAoAAAALAAcAAQAWAAsAAAALAAgAAQAWAAwAAAALAAkAAQAWAA0AAAAMAAIAAQAXAAYAAAAMAAMAAQAXAAcAAAAMAAQAAQAXAAgAAAAMAAUAAQAXAAkAAAAMAAYAAQAXAAoAAAAMAAcAAQAXAAsAAAAMAAgAAQAXAAwAAAAMAAkAAQAXAA0AAAANAAIAAQAYAAYAAAANAAMAAQAYAAcAAAANAAQAAQAYAAgAAAANAAUAAQAYAAkAAAANAAYAAQAYAAoAAAANAAcAAQAYAAsAAAANAAgAAQAYAAwAAAANAAkAAQAYAA0AAAAOAAEAAQAZAAUAAAAOAAIAAQAZAAYAAAAOAAMAAQAZAAcAAAAOAAQAAQAZAAgAAAAOAAUAAQAZAAkAAAAOAAYAAQAZAAoAAAAOAAcAAQAZAAsAAAAOAAgAAQAZAAwAAAAOAAkAAQAZAA0AAAAPAAAAAQAaAAQAAAAPAAEAAQAaAAUAAAAPAAIAAQAaAAYAAAAPAAMAAQAaAAcAAAAPAAQAAQAaAAgAAAAPAAUAAQAaAAkAAAAPAAYAAQAaAAoAAAAPAAcAAQAaAAsAAAAPAAgAAQAaAAwAAAAPAAkAAQAaAA0AAAAQAAAAAQAbAAQAAAAQAAEAAQAbAAUAAAAQAAIAAQAbAAYAAAAQAAMAAQAbAAcAAAAQAAQAAQAbAAgAAAAQAAUAAQAbAAkAAAAQAAYAAQAbAAoAAAAQAAcAAQAbAAsAAAAQAAgAAQAbAAwAAAAQAAkAAQAbAA0AAAARAAAAAQAcAAQAAAARAAEAAQAcAAUAAAARAAIAAQAcAAYAAAARAAMAAQAcAAcAAAARAAQAAQAcAAgAAAARAAUAAQAcAAkAAAARAAYAAQAcAAoAAAARAAcAAQAcAAsAAAARAAgAAQAcAAwAAAARAAkAAQAcAA0AAAASAAAAAQAdAAQAAAASAAEAAQAdAAUAAAASAAIAAQAdAAYAAAASAAMAAQAdAAcAAAASAAQAAQAdAAgAAAASAAUAAQAdAAkAAAASAAYAAQAdAAoAAAASAAcAAQAdAAsAAAASAAgAAQAdAAwAAAASAAkAAQAdAA0AAAATAAAAAQAeAAQAAAATAAEAAQAeAAUAAAATAAIAAQAeAAYAAAATAAMAAQAeAAcAAAATAAQAAQAeAAgAAAATAAUAAQAeAAkAAAATAAYAAQAeAAoAAAATAAcAAQAeAAsAAAATAAgAAQAeAAwAAAATAAkAAQAeAA0AAAAUAAAAAQAfAAQAAAAUAAEAAQAfAAUAAAAUAAIAAQAfAAYAAAAUAAMAAQAfAAcAAAAUAAQAAQAfAAgAAAAUAAUAAQAfAAkAAAAUAAYAAQAfAAoAAAAUAAcAAQAfAAsAAAAUAAgAAQAfAAwAAAAUAAkAAQAfAA0AAAAVAAEAAQAgAAUAAAAVAAIAAQAgAAYAAAAVAAMAAQAgAAcAAAAVAAQAAQAgAAgAAAAVAAUAAQAgAAkAAAAVAAYAAQAgAAoAAAAVAAcAAQAgAAsAAAAVAAgAAQAgAAwAAAAVAAkAAQAgAA0AAAAWAAMAAQAhAAcAAAAWAAQAAQAhAAgAAAAWAAUAAQAhAAkAAAAWAAYAAQAhAAoAAAD9/wEAAQAHAAUAAAD9/wIAAQAHAAYAAAD9/wMAAQAHAAcAAAD+/wAAAQAIAAQAAAD+/wEAAQAIAAUAAAD+/wIAAQAIAAYAAAD+/wMAAQAIAAcAAAD+/wQAAQAIAAgAAAD/////AQAJAAMAAAD//wAAAQAJAAQAAAD//wEAAQAJAAUAAAD//wIAAQAJAAYAAAD//wMAAQAJAAcAAAD//wQAAQAJAAgAAAAAAP7/AQAKAAIAAAAAAP//AQAKAAMAAAAAAAAAAQAKAAQAAAAAAAEAAQAKAAUAAAAAAAIAAQAKAAYAAAAAAAMAAQAKAAcAAAAAAAQAAQAKAAgAAAAAAAUAAQAKAAkAAAABAP7/AQALAAIAAAABAP//AQALAAMAAAABAAAAAQALAAQAAAABAAEAAQALAAUAAAABAAIAAQALAAYAAAABAAMAAQALAAcAAAABAAQAAQALAAgAAAABAAUAAQALAAkAAAABAAYAAQALAAoAAAABAAcAAQALAAsAAAABAAgAAQALAAwAAAACAP7/AQAMAAIAAAACAP//AQAMAAMAAAACAAAAAQAMAAQAAAACAAEAAQAMAAUAAAACAAIAAQAMAAYAAAACAAMAAQAMAAcAAAACAAQAAQAMAAgAAAACAAUAAQAMAAkAAAACAAYAAQAMAAoAAAACAAcAAQAMAAsAAAACAAgAAQAMAAwAAAACAAkAAQAMAA0AAAACAAoAAQAMAA4AAAADAP3/AQANAAEAAAADAP7/AQANAAIAAAADAP//AQANAAMAAAADAAAAAQANAAQAAAADAAEAAQANAAUAAAADAAIAAQANAAYAAAADAAMAAQANAAcAAAADAAQAAQANAAgAAAADAAUAAQANAAkAAAADAAYAAQANAAoAAAADAAcAAQANAAsAAAADAAgAAQANAAwAAAADAAkAAQANAA0AAAADAAoAAQANAA4AAAAEAP3/AQAOAAEAAAAEAP7/AQAOAAIAAAAEAP//AQAOAAMAAAAEAAAAAQAOAAQAAAAEAAEAAQAOAAUAAAAEAAIAAQAOAAYAAAAEAAMAAQAOAAcAAAAEAAQAAQAOAAgAAAAEAAUAAQAOAAkAAAAEAAYAAQAOAAoAAAAEAAcAAQAOAAsAAAAEAAgAAQAOAAwAAAAEAAkAAQAOAA0AAAAEAAoAAQAOAA4AAAAFAP3/AQAPAAEAAAAFAP7/AQAPAAIAAAAFAP//AQAPAAMAAAAFAAAAAQAPAAQAAAAFAAEAAQAPAAUAAAAFAAIAAQAPAAYAAAAFAAMAAQAPAAcAAAAFAAQAAQAPAAgAAAAFAAUAAQAPAAkAAAAFAAYAAQAPAAoAAAAFAAcAAQAPAAsAAAAFAAgAAQAPAAwAAAAFAAkAAQAPAA0AAAAFAAoAAQAPAA4AAAAGAP3/AQAQAAEAAAAGAP7/AQAQAAIAAAAGAP//AQAQAAMAAAAGAAAAAQAQAAQAAAAGAAEAAQAQAAUAAAAGAAIAAQAQAAYAAAAGAAMAAQAQAAcAAAAGAAQAAQAQAAgAAAAGAAUAAQAQAAkAAAAGAAYAAQAQAAoAAAAHAP3/AQARAAEAAAAHAP7/AQARAAIAAAAHAP//AQARAAMAAAAHAAAAAQARAAQAAAAHAAEAAQARAAUAAAAHAAIAAQARAAYAAAAHAAMAAQARAAcAAAAHAAQAAQARAAgAAAAHAAUAAQARAAkAAAAHAAYAAQARAAoAAAAIAP7/AQASAAIAAAAIAP//AQASAAMAAAAIAAAAAQASAAQAAAAIAAEAAQASAAUAAAAIAAIAAQASAAYAAAAIAAMAAQASAAcAAAAIAAQAAQASAAgAAAAIAAUAAQASAAkAAAAJAP//AQATAAMAAAAJAAAAAQATAAQAAAAJAAEAAQATAAUAAAAJAAIAAQATAAYAAAAJAAMAAQATAAcAAAAJAAQAAQATAAgAAAAJAAUAAQATAAkAAAAKAAIAAQAUAAYAAAAKAAMAAQAUAAcAAAAKAAQAAQAUAAgAAAAKAAUAAQAUAAkAAAA=")
+tile_set = SubResource("TileSet_1ajci")
+
+[node name="TileMap" type="TileMap" parent="World/TileMapLayer" unique_id=260070308]
+visible = false
+tile_set = SubResource("TileSet_qywvv")
+format = 2
+layer_0/tile_data = PackedInt32Array(655365, 327680, 0, 720901, 327680, 1, 786437, 327680, 2, 851973, 327680, 3, 917509, 327680, 4, 983045, 327680, 5, 1048581, 327680, 6, 1114117, 327680, 7, 655366, 393216, 0, 720902, 393216, 1, 786438, 393216, 2, 851974, 393216, 3, 917510, 393216, 4, 983046, 393216, 5, 1048582, 393216, 6, 1114118, 393216, 7, 655367, 458752, 0, 720903, 458752, 1, 786439, 458752, 2, 851975, 458752, 3, 917511, 458752, 4, 983047, 458752, 5, 1048583, 458752, 6, 1114119, 458752, 7, 655368, 196608, 0, 720904, 196608, 1, 786440, 196608, 2, 851976, 196608, 3, 917512, 196608, 4, 983048, 196608, 5, 1048584, 196608, 6, 1114120, 196608, 7, 655369, 262144, 0, 720905, 262144, 1, 786441, 262144, 2, 851977, 262144, 3, 917513, 262144, 4, 983049, 262144, 5, 1048585, 262144, 6, 1114121, 262144, 7, 655370, 327680, 0, 720906, 327680, 1, 786442, 327680, 2, 851978, 327680, 3, 917514, 327680, 4, 983050, 327680, 5, 1048586, 327680, 6, 1114122, 327680, 7, 655371, 393216, 0, 720907, 393216, 1, 786443, 393216, 2, 851979, 393216, 3, 917515, 393216, 4, 983051, 393216, 5, 1048587, 393216, 6, 1114123, 393216, 7, 655372, 0, 0, 720908, 0, 1, 786444, 0, 2, 851980, 0, 3, 917516, 0, 4, 983052, 0, 5, 1048588, 0, 6, 1114124, 0, 7, 655373, 65536, 0, 720909, 65536, 1, 786445, 65536, 2, 851981, 65536, 3, 917517, 65536, 4, 983053, 65536, 5, 1048589, 65536, 6, 1114125, 65536, 7, 655374, 131072, 0, 720910, 131072, 1, 786446, 131072, 2, 851982, 131072, 3, 917518, 131072, 4, 983054, 131072, 5, 1048590, 131072, 6, 1114126, 131072, 7, 655375, 196608, 0, 720911, 196608, 1, 786447, 196608, 2, 851983, 196608, 3, 917519, 196608, 4, 983055, 196608, 5, 1048591, 196608, 6, 1114127, 196608, 7, 655376, 262144, 0, 720912, 262144, 1, 786448, 262144, 2, 851984, 262144, 3, 917520, 262144, 4, 983056, 262144, 5, 1048592, 262144, 6, 1114128, 262144, 7, 655377, 327680, 0, 720913, 327680, 1, 786449, 327680, 2, 851985, 327680, 3, 917521, 327680, 4, 983057, 327680, 5, 1048593, 327680, 6, 1114129, 327680, 7, 655378, 393216, 0, 720914, 393216, 1, 786450, 393216, 2, 851986, 393216, 3, 917522, 393216, 4, 983058, 393216, 5, 1048594, 393216, 6, 1114130, 393216, 7, 655379, 458752, 0, 720915, 458752, 1, 786451, 458752, 2, 851987, 458752, 3, 917523, 458752, 4, 983059, 458752, 5, 1048595, 458752, 6, 1114131, 458752, 7, 655360, 0, 0, 720896, 0, 1, 786432, 0, 2, 851968, 0, 3, 917504, 0, 4, 983040, 0, 5, 1048576, 0, 6, 1114112, 0, 7, 655361, 65536, 0, 720897, 65536, 1, 786433, 65536, 2, 851969, 65536, 3, 917505, 65536, 4, 983041, 65536, 5, 1048577, 65536, 6, 1114113, 65536, 7, 655362, 131072, 0, 720898, 131072, 1, 786434, 131072, 2, 851970, 131072, 3, 917506, 131072, 4, 983042, 131072, 5, 1048578, 131072, 6, 1114114, 131072, 7, 655363, 196608, 0, 720899, 196608, 1, 786435, 196608, 2, 851971, 196608, 3, 917507, 196608, 4, 983043, 196608, 5, 1048579, 196608, 6, 1114115, 196608, 7, 655364, 262144, 0, 720900, 262144, 1, 786436, 262144, 2, 851972, 262144, 3, 917508, 262144, 4, 983044, 262144, 5, 1048580, 262144, 6, 1114116, 262144, 7)
+
+[node name="PandaPlayer" parent="World" unique_id=1763336977 instance=ExtResource("4_flqon")]
+position = Vector2(560.00006, 447.99997)
+scale = Vector2(10, 10)
+
+[node name="Boundaries" type="StaticBody2D" parent="World" unique_id=1642515073]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Boundaries" unique_id=1498839754]
+position = Vector2(320, 528)
+shape = SubResource("WorldBoundaryShape2D_lgwnu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="World/Boundaries" unique_id=1992905625]
+position = Vector2(896, 536)
+shape = SubResource("WorldBoundaryShape2D_flqon")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1527928622]
+
+[node name="HeartContainer" type="HBoxContainer" parent="HUD" unique_id=792011143]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 44.0
+scale = Vector2(5, 5)
+theme_override_constants/separation = 2
+
+[node name="Heart1" type="Sprite2D" parent="HUD/HeartContainer" unique_id=19070359]
+position = Vector2(8, 8)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Heart2" type="Sprite2D" parent="HUD/HeartContainer" unique_id=961936352]
+position = Vector2(24, 8)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Heart3" type="Sprite2D" parent="HUD/HeartContainer" unique_id=384488806]
+position = Vector2(40, 8)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Heart4" type="Sprite2D" parent="HUD/HeartContainer" unique_id=1149713224]
+position = Vector2(56, 8)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Heart5" type="Sprite2D" parent="HUD/HeartContainer" unique_id=1222145326]
+position = Vector2(72, 8)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CoinLabel" type="Label" parent="HUD" unique_id=6058720]
+visibility_layer = 512
+texture_filter = 1
+offset_left = 63.0
+offset_top = 74.0
+offset_right = 295.0
+offset_bottom = 151.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "874349"
+
+[node name="Coin" parent="HUD" unique_id=579423577 instance=ExtResource("6_7b55j")]
+position = Vector2(32, 108)
+scale = Vector2(3, 3)
+
+[node name="RollLabel" type="Label" parent="HUD" unique_id=1995963644]
+offset_left = 16.0
+offset_top = 568.0
+offset_right = 189.0
+offset_bottom = 635.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "Rolls: 1"
+
+[node name="TutorialLabel" type="Label" parent="HUD" unique_id=1938938636]
+offset_left = 304.0
+offset_top = 304.0
+offset_right = 872.0
+offset_bottom = 371.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "Move with WASD keys"
+
+[node name="RaceButton" type="TextureButton" parent="." unique_id=1485809028]
+offset_left = 904.00006
+offset_top = 256.0
+offset_right = 968.00006
+offset_bottom = 296.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("7_lgwnu")
+
+[node name="TrainButton" type="TextureButton" parent="." unique_id=1515384239]
+offset_left = 904.00006
+offset_top = 400.0
+offset_right = 968.00006
+offset_bottom = 440.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("8_flqon")
+
+[node name="ShopButton" type="TextureButton" parent="." unique_id=953661950]
+offset_left = 16.0
+offset_top = 256.0
+offset_right = 80.0
+offset_bottom = 296.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("9_rcqid")
+
+[node name="QuitButton" type="TextureButton" parent="." unique_id=1242610721]
+offset_left = 16.0
+offset_top = 400.0
+offset_right = 80.0
+offset_bottom = 440.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("10_1ajci")
+
+[node name="RacePopup" type="Control" parent="." unique_id=1979307751]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="Sprite2D" parent="RacePopup" unique_id=973493140]
+position = Vector2(576, 320.00003)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("14_1ajci")
+
+[node name="Race1Button" type="TextureButton" parent="RacePopup" unique_id=1285763893]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 256.0
+offset_right = 344.44446
+offset_bottom = 288.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("11_rcqid")
+
+[node name="Race2Button" type="TextureButton" parent="RacePopup" unique_id=1827218583]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 256.0
+offset_right = 704.44446
+offset_bottom = 288.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("12_1ajci")
+
+[node name="Race2Lock" type="Sprite2D" parent="RacePopup" unique_id=1172381066]
+position = Vector2(760, 312)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("14_7b55j")
+
+[node name="CloseButton" type="TextureButton" parent="RacePopup" unique_id=141571016]
+layout_mode = 0
+offset_left = 456.00003
+offset_top = 384.0
+offset_right = 520.0
+offset_bottom = 416.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("13_7b55j")
+
+[node name="PopupTitle" type="Label" parent="RacePopup" unique_id=2043013894]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 144.0
+offset_right = 773.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 64
+text = "Choose Race"
+
+[node name="TrainPopup" type="Control" parent="." unique_id=347596111]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="Sprite2D" parent="TrainPopup" unique_id=1383293637]
+position = Vector2(576, 320)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("14_1ajci")
+
+[node name="Train1Button" type="TextureButton" parent="TrainPopup" unique_id=570484451]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 256.0
+offset_right = 344.0
+offset_bottom = 288.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("11_rcqid")
+
+[node name="Train2Button" type="TextureButton" parent="TrainPopup" unique_id=209103694]
+layout_mode = 0
+offset_left = 640.00006
+offset_top = 256.0
+offset_right = 704.00006
+offset_bottom = 288.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("12_1ajci")
+
+[node name="Train1Lock" type="Sprite2D" parent="TrainPopup" unique_id=71973070]
+position = Vector2(400, 312)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("14_7b55j")
+
+[node name="Train2Lock" type="Sprite2D" parent="TrainPopup" unique_id=1613642299]
+position = Vector2(760, 312)
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("14_7b55j")
+
+[node name="CloseButton" type="TextureButton" parent="TrainPopup" unique_id=1891436896]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 384.0
+offset_right = 520.0
+offset_bottom = 416.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("13_7b55j")
+
+[node name="PopupTitle" type="Label" parent="TrainPopup" unique_id=1355978009]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 144.0
+offset_right = 825.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 64
+text = "Choose Training"
+
+[node name="ShopPopup" type="CanvasLayer" parent="." unique_id=1685068539]
+visible = false
+
+[node name="ColorRect" type="Sprite2D" parent="ShopPopup" unique_id=707304769]
+position = Vector2(576.00006, 324.00003)
+scale = Vector2(5.142857, 5.785714)
+texture = ExtResource("14_1ajci")
+
+[node name="TitleLable" type="Label" parent="ShopPopup" unique_id=726534572]
+offset_left = 376.0
+offset_top = 48.0
+offset_right = 773.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 80
+text = "Shop"
+horizontal_alignment = 1
+
+[node name="ShopCoinLabel" type="Label" parent="ShopPopup" unique_id=1720707591]
+offset_left = 32.0
+offset_top = 40.0
+offset_right = 72.0
+offset_bottom = 116.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+
+[node name="CloseButton" type="TextureButton" parent="ShopPopup" unique_id=1584312170]
+offset_left = 464.0
+offset_top = 496.00003
+offset_right = 528.0
+offset_bottom = 528.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("13_7b55j")
+
+[node name="RollSprite" type="TextureButton" parent="ShopPopup" unique_id=1451990734]
+offset_left = 104.0
+offset_top = 272.0
+offset_right = 168.0
+offset_bottom = 304.0
+scale = Vector2(3.6, 3.6)
+texture_normal = ExtResource("18_a8gd2")
+
+[node name="HeartItem" type="TextureButton" parent="ShopPopup" unique_id=490396458]
+offset_left = 464.00003
+offset_top = 272.00003
+offset_right = 496.00003
+offset_bottom = 288.00003
+scale = Vector2(7, 7)
+texture_normal = ExtResource("1_l6cm7")
+
+[node name="CrownItem" type="TextureButton" parent="ShopPopup" unique_id=134124185]
+offset_left = 768.0
+offset_top = 136.0
+offset_right = 800.0
+offset_bottom = 168.0
+scale = Vector2(8, 8)
+texture_normal = ExtResource("19_hstxw")
+
+[node name="PriceLabels" type="Node2D" parent="ShopPopup" unique_id=2037942182]
+
+[node name="RollPrice" type="Label" parent="ShopPopup/PriceLabels" unique_id=1471502195]
+offset_left = 128.0
+offset_top = 384.0
+offset_right = 319.0
+offset_bottom = 460.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "5 Coins"
+
+[node name="HeartPrice" type="Label" parent="ShopPopup/PriceLabels" unique_id=1243282536]
+offset_left = 488.0
+offset_top = 384.0
+offset_right = 679.0
+offset_bottom = 460.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "8 Coins"
+
+[node name="CrownPrice" type="Label" parent="ShopPopup/PriceLabels" unique_id=50743884]
+offset_left = 800.0
+offset_top = 392.0
+offset_right = 991.0
+offset_bottom = 468.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+text = "20 Coins"
+
+[node name="MessageLabel" type="Label" parent="ShopPopup" unique_id=1756437999]
+offset_left = 24.0
+offset_top = 152.0
+offset_right = 1136.0
+offset_bottom = 228.0
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 55
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="RaceButton" to="." method="_on_race_button_pressed"]
+[connection signal="pressed" from="TrainButton" to="." method="_on_train_button_pressed"]
+[connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="RacePopup/Race1Button" to="." method="_on_race1_button_pressed"]
+[connection signal="pressed" from="RacePopup/Race2Button" to="." method="_on_race2_button_pressed"]
+[connection signal="pressed" from="RacePopup/CloseButton" to="." method="_on_race_close_pressed"]
+[connection signal="pressed" from="TrainPopup/Train1Button" to="." method="_on_train1_button_pressed"]
+[connection signal="pressed" from="TrainPopup/Train2Button" to="." method="_on_train2_button_pressed"]
+[connection signal="pressed" from="TrainPopup/CloseButton" to="." method="_on_train_close_pressed"]
+[connection signal="pressed" from="ShopPopup/CloseButton" to="." method="_on_shop_close_pressed"]
+[connection signal="pressed" from="ShopPopup/RollSprite" to="." method="_on_roll_sprite_pressed"]
+[connection signal="pressed" from="ShopPopup/HeartItem" to="." method="_on_heart_item_pressed"]
+[connection signal="pressed" from="ShopPopup/CrownItem" to="." method="_on_crown_item_pressed"]

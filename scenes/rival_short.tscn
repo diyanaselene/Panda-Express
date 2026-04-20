@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bcj5bxpu0av54"]
+
+[ext_resource type="Script" uid="uid://bwb42th7lutdb" path="res://scripts/rival_short.gd" id="1_bx03f"]
+[ext_resource type="SpriteFrames" uid="uid://ojvqio2q0duk" path="res://assets/sprites/frames/rival_short_frames.tres" id="2_28flh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmmka"]
+size = Vector2(16, 17)
+
+[node name="rival_short" type="CharacterBody2D" unique_id=777545421]
+collision_layer = 4
+script = ExtResource("1_bx03f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1232930298]
+sprite_frames = ExtResource("2_28flh")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681764642]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_hmmka")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=620640758]
+target_position = Vector2(25, 13)

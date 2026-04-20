@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cstsmiyn8jomm"]
+
+[ext_resource type="Script" uid="uid://dciftepfa3dl" path="res://scripts/panda_player.gd" id="1_pmol1"]
+[ext_resource type="SpriteFrames" uid="uid://cyda3146wotc2" path="res://assets/sprites/frames/panda_frames.tres" id="2_0h3gx"]
+[ext_resource type="Texture2D" uid="uid://csp1y4y2aaw4u" path="res://assets/sprites/pandaFriend/rusted_crown.png" id="3_g2u4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tar3"]
+size = Vector2(16, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmol1"]
+size = Vector2(18, 16)
+
+[node name="PandaPlayer" type="CharacterBody2D" unique_id=1763336977]
+collision_layer = 2
+collision_mask = 57
+script = ExtResource("1_pmol1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=307085260]
+sprite_frames = ExtResource("2_0h3gx")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=730689437]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_2tar3")
+
+[node name="PunchHitbox" type="Area2D" parent="." unique_id=1364484995]
+position = Vector2(0, 7.5)
+collision_layer = 16
+collision_mask = 4
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PunchHitbox" unique_id=1815048519]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_pmol1")
+
+[node name="CrownSprite" type="Sprite2D" parent="." unique_id=1881818216]
+visible = false
+position = Vector2(0, -11)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_g2u4c")

@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://difn8hpwtu70j"]
+
+[ext_resource type="Script" uid="uid://cmyq4r7ida4ff" path="res://scripts/barrel.gd" id="1_ptqd7"]
+[ext_resource type="Texture2D" uid="uid://c54iktf44f3sw" path="res://assets/sprites/training1/assets/Barrel_fall.webp" id="2_n8wf6"]
+[ext_resource type="Texture2D" uid="uid://cs1jcfcoxis6h" path="res://assets/sprites/training1/assets/barrelrolling.webp" id="3_n8wf6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qowtj"]
+atlas = ExtResource("2_n8wf6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p63pu"]
+atlas = ExtResource("2_n8wf6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ywul"]
+atlas = ExtResource("2_n8wf6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_043oi"]
+atlas = ExtResource("2_n8wf6")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhtw8"]
+atlas = ExtResource("3_n8wf6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdyii"]
+atlas = ExtResource("3_n8wf6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ucd5"]
+atlas = ExtResource("3_n8wf6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bdev8"]
+atlas = ExtResource("3_n8wf6")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qowtj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qowtj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p63pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ywul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_043oi")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mhtw8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdyii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ucd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bdev8")
+}],
+"loop": true,
+"name": &"rolling",
+"speed": 13.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p63pu"]
+radius = 42.0119
+
+[node name="Barrel" type="RigidBody2D" unique_id=1799357710]
+collision_layer = 16
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_ptqd7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=299585034]
+position = Vector2(0, -2.6666665)
+scale = Vector2(3.6, 3.6)
+sprite_frames = SubResource("SpriteFrames_qowtj")
+animation = &"falling"
+autoplay = "rolling"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=486583678]
+position = Vector2(-2, 2)
+shape = SubResource("CircleShape2D_p63pu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

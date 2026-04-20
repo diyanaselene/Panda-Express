@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bt763w5dpu0si"]
+
+[ext_resource type="Script" uid="uid://bhyuhkwtmm7c4" path="res://scripts/rival_fat.gd" id="1_jdj10"]
+[ext_resource type="SpriteFrames" uid="uid://b24f4af807u7o" path="res://assets/sprites/frames/rival_fat_frames.tres" id="2_mn3ca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmmka"]
+size = Vector2(16, 17)
+
+[node name="rival_fat" type="CharacterBody2D" unique_id=777545421]
+collision_layer = 4
+script = ExtResource("1_jdj10")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1232930298]
+sprite_frames = ExtResource("2_mn3ca")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=681764642]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_hmmka")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=197874730]
+target_position = Vector2(25, 13)
