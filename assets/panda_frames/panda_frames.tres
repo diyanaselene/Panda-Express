@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bqld3q1k4qmrn"]
+
+[ext_resource type="Texture2D" uid="uid://i4fp5541q7ge" path="res://assets/sprites/pandaFriend/MushPanda_idle.webp" id="1_w3ahb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxuvi"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdia1"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w75yj"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37ryp"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxy5c"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ouji"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqbjr"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kupb"]
+atlas = ExtResource("1_w3ahb")
+region = Rect2(448, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxuvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdia1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w75yj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37ryp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxy5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ouji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqbjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kupb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
